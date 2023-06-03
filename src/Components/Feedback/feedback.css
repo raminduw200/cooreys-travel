@@ -39,6 +39,13 @@
 }
 .singleFeedback .feedbackInfo .date {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.singleFeedback .feedbackInfo .date .icon {
+  font-size: 1rem;
 }
 .singleFeedback .personDetails {
   display: flex;

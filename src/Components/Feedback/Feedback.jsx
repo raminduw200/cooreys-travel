@@ -5,7 +5,8 @@ import './feedback.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi'
+import { HiOutlineLocationMarker } from 'react-icons/hi'
+import { FaRegCalendarAlt } from 'react-icons/fa'
 
 const Data = [
     {
@@ -31,7 +32,7 @@ const Data = [
 const Main = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 1000 })
+        Aos.init({ duration: 2000 })
     }, [])
 
 
@@ -55,6 +56,7 @@ const Main = () => {
                                     </div>
                                     <div className="date">
                                         <p>{date}</p>
+                                        <FaRegCalendarAlt className='icon'/>
                                     </div>
                                 </div>
                                 <div className="personDetails">
