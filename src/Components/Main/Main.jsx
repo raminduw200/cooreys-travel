@@ -25,6 +25,42 @@ const Data = [
         fees: "$1000",
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
+    {
+        id: 1,
+        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        destTitle: 'Nuwara Eliya',
+        location: 'Sri Lanka',
+        grade: 'CULURAL RELAX',
+        fees: "$1000",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+    },
+    {
+        id: 2,
+        imgSrc: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/24/05/e0/galle-fort.jpg?w=1200&h=1200&s=1',
+        destTitle: 'Galle Fort',
+        location: 'Sri Lanka',
+        grade: 'CULURAL RELAX',
+        fees: "$1000",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+    },
+    {
+        id: 1,
+        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        destTitle: 'Nuwara Eliya',
+        location: 'Sri Lanka',
+        grade: 'CULURAL RELAX',
+        fees: "$1000",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+    },
+    {
+        id: 2,
+        imgSrc: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/24/05/e0/galle-fort.jpg?w=1200&h=1200&s=1',
+        destTitle: 'Galle Fort',
+        location: 'Sri Lanka',
+        grade: 'CULURAL RELAX',
+        fees: "$1000",
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+    },
 ]
 
 const Main = () => {

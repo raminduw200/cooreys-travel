@@ -1,0 +1,25 @@
+:root{
+    --primary-color: hsl(199, 100%, 33%);
+    --secondary-color: hsl(187, 85%, 43%);
+    --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --white-color: #FFF;
+    --black-color: hsl(201, 33%, 16%);
+    --text-color: hsl(240, 4%, 36%);
+    --white-color-deam: hsl(0, 0%, 93%);
+    --gray-text: rgb(190, 190, 190);
+    --input-color: rgb(229, 229, 229);
+    --body-color: rgb(240, 240, 246);
+    --card-background: rgb(225, 225, 235);
+    --rating: #d8b800;
+}
+  
+.starTray {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .icon {
+        color: var(--rating);
+        font-size: 1.5rem;
+    }
+}
