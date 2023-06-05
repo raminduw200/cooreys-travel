@@ -6,6 +6,36 @@ import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+
+const Data2 = [
+    {
+        id: 1,
+        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        packageName: 'Light Traveler',
+        location: 'Sri Lanka',
+        days: "6 Days",
+        fees: "NEGOTIABLE",
+        description: 'Sigriya, Dambulla / Matale / Kandy, Nuwaraeliya, Ella, Mirissa / Whale Watching, Colombo'
+    },
+    {
+        id: 2,
+        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        packageName: 'Explorer',
+        location: 'Sri Lanka',
+        days: "10 Days",
+        fees: "NEGOTIABLE",
+        description: 'Negambo, Anuradhapura / Dambulla, Sigiriya, Matale / Kandy, Nuwaraeliya / Horton Plains, Ella, Udawalawa / Mirissa, Whale Watching / Galle'
+    },
+    {
+        id: 3,
+        imgSrc: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/24/05/e0/galle-fort.jpg?w=1200&h=1200&s=1',
+        packageName: 'Extreme Traveler',
+        location: 'Sri Lanka',
+        days: "15 Days",
+        fees: "NEGOTIABLE",
+        description: 'Pinnawala / Dambulla / Sigiriya, Polonnaruwa / Trincamalee, Arugambay, Kandy, Nuwaraeliya, Ella, Yala National Park, Weligama / Mirissa, Galle / Hikkaduwa, Colombo'
+    },
+]
 const Data = [
     {
         id: 1,
@@ -75,21 +105,22 @@ const Main = () => {
 
             <div className="secTitle">
                 <h3 data-aos="fade-right" className="title">
-                    Most visited destinations
+                    Our Packages
                 </h3>
             </div>
 
             <div className="secContent grid">
                 {
-                    Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
+                    Data2.map(({id, imgSrc, packageName, location, days, fees, description}) => {
+                    // Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
                         return(
                             <div data-aos="fade-up" key={id} className='singleDestination'>
                                 <div className="imageDiv">
-                                    <img src={imgSrc} alt={destTitle}/>
+                                    <img src={imgSrc} alt={packageName}/>
                                 </div>
 
                                 <div className="cardInfo">
-                                    <h4 className="destTitle">{destTitle}</h4>
+                                    <h4 className="destTitle">{packageName}</h4>
                                     <span className="continent flex">
                                         <HiOutlineLocationMarker className='icon'/>
                                         <span className="name">{location}</span>
@@ -97,10 +128,10 @@ const Main = () => {
 
                                     <div className="fees flex">
                                         <div className="grade">
-                                            <span>{grade}<small>+1</small></span>
+                                            <span>PRICE: {fees}<small>+1</small></span>
                                         </div>
                                         <div className="price">
-                                            <h5>{fees}</h5>
+                                            <h5>{days}</h5>
                                         </div>
                                     </div>
 
