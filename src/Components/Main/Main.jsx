@@ -81,7 +81,7 @@ const Main = () => {
 
             <div className="secContent grid">
                 {
-                    Data.map(({id, item, imgSrc, destTitle, location, grade, fees, description}) => {
+                    Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
                         return(
                             <div data-aos="fade-up" key={id} className='singleDestination'>
                                 <div className="imageDiv">
