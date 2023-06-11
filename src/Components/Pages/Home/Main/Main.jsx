@@ -1,6 +1,6 @@
 import React, {useEffect } from 'react'
 import './main.css'
-
+import { Link } from 'react-router-dom';
 import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi'
 
 import Aos from 'aos'
@@ -15,7 +15,7 @@ const Data2 = [
         location: 'Sri Lanka',
         days: "6 Days",
         fees: "NEGOTIABLE",
-        description: 'Sigriya, Dambulla / Matale / Kandy, Nuwaraeliya, Ella, Mirissa / Whale Watching, Colombo'
+        shortDesc: 'Sigriya, Dambulla / Matale / Kandy, Nuwaraeliya, Ella, Mirissa / Whale Watching, Colombo'
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const Data2 = [
         location: 'Sri Lanka',
         days: "10 Days",
         fees: "NEGOTIABLE",
-        description: 'Negambo, Anuradhapura / Dambulla, Sigiriya, Matale / Kandy, Nuwaraeliya / Horton Plains, Ella, Udawalawa / Mirissa, Whale Watching / Galle'
+        shortDesc: 'Negambo, Anuradhapura / Dambulla, Sigiriya, Matale / Kandy, Nuwaraeliya / Horton Plains, Ella, Udawalawa / Mirissa, Whale Watching / Galle'
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const Data2 = [
         location: 'Sri Lanka',
         days: "15 Days",
         fees: "NEGOTIABLE",
-        description: 'Pinnawala / Dambulla / Sigiriya, Polonnaruwa / Trincamalee, Arugambay, Kandy, Nuwaraeliya, Ella, Yala National Park, Weligama / Mirissa, Galle / Hikkaduwa, Colombo'
+        shortDesc: 'Pinnawala / Dambulla / Sigiriya, Polonnaruwa / Trincamalee, Arugambay, Kandy, Nuwaraeliya, Ella, Yala National Park, Weligama / Mirissa, Galle / Hikkaduwa, Colombo'
     },
 ]
 const Data = [
@@ -44,7 +44,7 @@ const Data = [
         location: 'Sri Lanka',
         grade: 'CULURAL RELAX',
         fees: "$1000",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        shortDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
         id: 2,
@@ -53,7 +53,7 @@ const Data = [
         location: 'Sri Lanka',
         grade: 'CULURAL RELAX',
         fees: "$1000",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        shortDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
         id: 1,
@@ -62,7 +62,7 @@ const Data = [
         location: 'Sri Lanka',
         grade: 'CULURAL RELAX',
         fees: "$1000",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        shortDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
         id: 2,
@@ -71,7 +71,7 @@ const Data = [
         location: 'Sri Lanka',
         grade: 'CULURAL RELAX',
         fees: "$1000",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        shortDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
         id: 1,
@@ -80,7 +80,7 @@ const Data = [
         location: 'Sri Lanka',
         grade: 'CULURAL RELAX',
         fees: "$1000",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        shortDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
     {
         id: 2,
@@ -89,7 +89,7 @@ const Data = [
         location: 'Sri Lanka',
         grade: 'CULURAL RELAX',
         fees: "$1000",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        shortDesc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
     },
 ]
 
@@ -111,8 +111,8 @@ const Main = () => {
 
             <div className="secContent grid">
                 {
-                    Data2.map(({id, imgSrc, packageName, location, days, fees, description}) => {
-                    // Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
+                    Data2.map(({id, imgSrc, packageName, location, days, fees, shortDesc}) => {
+                    // Data.map(({id, imgSrc, destTitle, location, grade, fees, shortDesc}) => {
                         return(
                             <div data-aos="fade-up" key={id} className='singleDestination'>
                                 <div className="imageDiv">
@@ -136,11 +136,13 @@ const Main = () => {
                                     </div>
 
                                     <div className="desc">
-                                        <p>{description}</p>
+                                        <p>{shortDesc}</p>
                                     </div>
 
                                     <button className="btn flex">
-                                        DETAILS <HiOutlineClipboardCheck className='icon'/>
+                                        <Link to={{pathname: "/package_detail", search: "?id=" + id}}>
+                                            DETAILS <HiOutlineClipboardCheck className='icon'/>
+                                        </Link>
                                     </button>
                                 </div>
                             </div>
