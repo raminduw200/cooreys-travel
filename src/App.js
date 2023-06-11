@@ -1,19 +1,22 @@
 import './App.css';
-import Footer from './Components/Footer/Footer';
-import Home from './Components/Home/Home';
-import Main from './Components/Main/Main';
-import Feedback from './Components/Feedback/Feedback';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './Components/Pages/Home/HomePage';
+import PackageDetailPage from './Components/Pages/PackageDetail/PackageDetailPage';
 import NavBar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
-    <>
-    <NavBar />
-    <Home />
-    <Main />
-    <Feedback />
-    <Footer />
-    </>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/package_detail" element={<PackageDetailPage />} />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

@@ -3,6 +3,7 @@ import './navbar.css'
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
+import { Outlet, Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [active, setActive] = useState('navBar')
@@ -21,31 +22,31 @@ const NavBar = () => {
             <header className='header flex'>
 
                 <div className='logoDiv'>
-                    <a href='/' className='logo flex'>
-                        <h1><MdOutlineTravelExplore className="icon"/> Travel.</h1>
-                    </a>
+                    <Link to='/' className='logo flex'>
+                        <h1><MdOutlineTravelExplore className="icon"/> Coorey's Travel</h1>
+                    </Link>
                 </div>
 
                 <div className={active}>
                     <ul className='navLists grid'>
                         <li className='navItem'>
-                            <a href='/' className='navLink'>Home</a>
+                            <Link to='/' className='navLink'>Home</Link>
                         </li>
                         <li className='navItem'>
-                            <a href='/' className='navLink'>Packages</a>
+                            <Link to='/package_detail' className='navLink'>Packages</Link>
                         </li>
                         <li className='navItem'>
-                            <a href='/' className='navLink'>About</a>
+                            <Link to='/' className='navLink'>About</Link>
                         </li>
                         <li className='navItem'>
-                            <a href='/' className='navLink'>Pages</a>
+                            <Link to='/' className='navLink'>Pages</Link>
                         </li>
                         <li className='navItem'>
-                            <a href='/' className='navLink'>Contact</a>
+                            <Link to='/' className='navLink'>Contact</Link>
                         </li>
 
                         <button className='btn'>
-                            <a href="/">BOOK NOW</a>
+                            <Link to="/">BOOK NOW</Link>
                         </button>
                     </ul>
 
