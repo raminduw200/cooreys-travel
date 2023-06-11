@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="package_detail" element={<PackageDetailPage />} />
+        <Route path="/package_detail" element={<PackageDetailPage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
       <Footer />
