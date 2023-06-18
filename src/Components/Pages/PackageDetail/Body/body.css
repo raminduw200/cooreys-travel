@@ -13,20 +13,20 @@
   --card-background: rgb(225, 225, 235);
 }
 
-.body .container {
+.packageDetailBody .container {
   display: flex;
   flex-direction: column;
   padding: 3rem 2rem;
 }
-.body .container .bodyHeader {
+.packageDetailBody .container .bodyHeader {
   display: flex;
   justify-content: flex-end;
   padding: 1rem 0;
 }
-.body .container .packageIncludes {
+.packageDetailBody .container .packageIncludes {
   margin-bottom: 3rem;
 }
-.body .container .packageIncludes .packageIncludesTitle {
+.packageDetailBody .container .packageIncludes .packageIncludesTitle {
   display: flex;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -35,10 +35,10 @@
   color: var(--text-color);
   margin-bottom: 1rem;
 }
-.body .container .packageIncludes .packageIncludesTitle .icon {
+.packageDetailBody .container .packageIncludes .packageIncludesTitle .icon {
   font-size: 25px;
 }
-.body .container .packageIncludes .packageIncludesTitle::after {
+.packageDetailBody .container .packageIncludes .packageIncludesTitle::after {
   position: absolute;
   content: "";
   background: var(--secondary-color);
@@ -48,20 +48,20 @@
   top: 23px;
   z-index: -1;
 }
-.body .container .packageIncludes .packageIncludeDesc {
+.packageDetailBody .container .packageIncludes .packageIncludeDesc {
   line-height: 1.5;
   text-align: justify;
   color: var(--text-color);
   padding: 0 2rem;
 }
-.body .container .packageIncludes .packageIncludeDesc li {
+.packageDetailBody .container .packageIncludes .packageIncludeDesc li {
   list-style: disc !important;
 }
-.body .container .destinationRouting {
+.packageDetailBody .container .destinationRouting {
   display: flex;
   flex-direction: column;
 }
-.body .container .destinationRouting .destinationRoutingTitle {
+.packageDetailBody .container .destinationRouting .destinationRoutingTitle {
   display: flex;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -70,10 +70,10 @@
   color: var(--text-color);
   margin-bottom: 1rem;
 }
-.body .container .destinationRouting .destinationRoutingTitle .icon {
+.packageDetailBody .container .destinationRouting .destinationRoutingTitle .icon {
   font-size: 25px;
 }
-.body .container .destinationRouting .destinationRoutingTitle::after {
+.packageDetailBody .container .destinationRouting .destinationRoutingTitle::after {
   position: absolute;
   content: "";
   background: var(--secondary-color);
@@ -83,32 +83,32 @@
   bottom: 2px;
   z-index: -1;
 }
-.body .container .destinationRouting .dailyRouting .dailyRoutingItem {
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--gray-text);
   padding: 1rem 0;
 }
-.body .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames {
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames {
   padding-right: 1rem;
 }
-.body .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames .dailyRoutingItemName {
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames .dailyRoutingItemName {
   font-size: 16px;
   font-weight: 600;
   color: var(--text-color);
 }
-.body .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames .dailyRoutingItemName small {
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames .dailyRoutingItemName small {
   font-size: 14px;
   font-weight: 400;
   color: var(--gray-text);
 }
-.body .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemDesc {
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemDesc {
   text-align: right;
   color: var(--text-color);
 }
 
 @media screen and (min-width: 375px) {
-  .body .container .destinationRouting .dailyRoutingItem {
+  .packageDetailBody .container .destinationRouting .dailyRoutingItem {
     padding: 1rem 2rem;
   }
 }/*# sourceMappingURL=body.css.map */

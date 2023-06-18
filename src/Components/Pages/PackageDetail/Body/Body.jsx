@@ -458,7 +458,7 @@ const Home = () => {
     return (
         selectedPackage.map(({id, packageIncludes, routing}) => {
         return (
-        <section className='body'>
+        <section className='packageDetailBody'>
             <div className="container">
                 <div className="packageIncludes">
                     <div data-aos="fade-up" className="packageIncludesTitle">
