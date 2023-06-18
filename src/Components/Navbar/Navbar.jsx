@@ -39,14 +39,14 @@ const NavBar = () => {
                             <Link to='/' className='navLink'>About</Link>
                         </li>
                         <li className='navItem'>
-                            <Link to='/' className='navLink'>Pages</Link>
+                            <Link to='/places' className='navLink'>Places</Link>
                         </li>
                         <li className='navItem'>
                             <Link to='/' className='navLink'>Contact</Link>
                         </li>
 
                         <button className='btn'>
-                            <Link to="/">BOOK NOW</Link>
+                            <Link to="/book_now">BOOK NOW</Link>
                         </button>
                     </ul>
 
