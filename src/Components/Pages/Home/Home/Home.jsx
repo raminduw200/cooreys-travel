@@ -1,10 +1,8 @@
 import React, { useEffect } from 'react'
 import './home.css'
 import video from '../../../../Assets/132140.mp4'
-import ContactUs from '../../../contact-us/contact-us.component'
+import ContactUs from './ContactUs/ContactUs'
 
-import { GrLocation } from 'react-icons/gr'
-import { HiFilter } from 'react-icons/hi'
 import { FiFacebook } from 'react-icons/fi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { SiTripadvisor } from 'react-icons/si'
@@ -36,10 +34,8 @@ const Home = () => {
                     </h1>
 
                 </div>
-
                 
                    <ContactUs/>
-                
 
                 <div  data-aos="fade-up" className="homeFooterIcons flex">
                     <div className="rightIcons">

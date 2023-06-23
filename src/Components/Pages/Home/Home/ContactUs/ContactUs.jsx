@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { GrLocation } from 'react-icons/gr'
 import { HiFilter } from 'react-icons/hi'
-import './home.css';
+import './contactus.css';
 
 const ContactUs = () => {
     const form = useRef();
