@@ -62,6 +62,10 @@
 .cardDiv .searchOptions .icon {
   font-size: 18px;
 }
-.cardDiv .searchOptions span {
+.cardDiv .searchOptions button {
+  background-color: transparent;
+  border: none;
   font-size: 13px;
+  color: var(--white-color);
+  font-weight: 500;
 }/*# sourceMappingURL=contactus.css.map */
