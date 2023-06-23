@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import './home.css'
-import video from '../../../../Assets/132140.mp4'
-import ContactUs from './ContactUs/ContactUs'
+import './header.css'
+import { useLocation } from 'react-router-dom';
 
 import { FiFacebook } from 'react-icons/fi'
 import { AiOutlineInstagram } from 'react-icons/ai'
@@ -12,30 +11,33 @@ import { TbApps } from 'react-icons/tb'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
+
 const Home = () => {
     useEffect(() => {
         Aos.init({ duration: 1500 })
     }, [])
 
-    return (
-        <section className='home'>
-            <div className="overlay"></div>
-            <video src={video} muted autoPlay loop type="video/mp4"></video>
 
-            <div className="homeContent container">
+    return (
+        <section className='packageDetailHeader'>
+            <div className="overlay"></div>
+            {/* <video src={video} muted autoPlay loop type="video/mp4"></video> */}
+            <img src="https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg" alt='booknow' />
+            <div className="headerContent container">
                 <div className="textDiv">
 
                     <span data-aos="fade-up" className="smallText">
-                        Our Packages
+                        Discover Sri Lanka's Hidden Treasures
                     </span>
 
                     <h1 data-aos="fade-up" className="homeTitle">
-                        Search your Holiday
+                        Book Your Adventure
                     </h1>
 
+                    <h2 data-aos="fade-up">
+                        Today!
+                    </h2>
                 </div>
-                
-                   <ContactUs/>
 
                 <div  data-aos="fade-up" className="homeFooterIcons flex">
                     <div className="rightIcons">
