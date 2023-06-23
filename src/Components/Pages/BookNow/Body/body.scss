@@ -1,0 +1,138 @@
+/* Colors */
+:root{
+    --primary-color: hsl(199, 100%, 33%);
+    --secondary-color: hsl(187, 85%, 43%);
+    --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --white-color: #FFF;
+    --black-color: hsl(201, 33%, 16%);
+    --text-color: hsl(240, 4%, 36%);
+    --white-color-deam: hsl(0, 0%, 93%);
+    --gray-text: rgb(190, 190, 190);
+    --input-color: rgb(229, 229, 229);
+    --body-color: rgb(240, 240, 246);
+    --card-background: rgb(225, 225, 235);
+}
+
+.booknowBody {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 2rem;
+
+        .secTitle {
+            .title{
+            position: relative;
+            width: max-content;
+            color: var(--text-color);
+            margin: 1rem 0;
+            z-index: 2;
+
+            &:after {
+                position: absolute;
+                content: '';
+                background: var(--secondary-color);
+                height: 5px;
+                width: 95px !important;
+                right: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+        }
+
+        .booknowForm {
+            padding: 0.2rem 1rem;
+            background: var(--white-color);
+            border-radius: 10px;
+            gap: 1rem;
+            
+            label {
+                display: block;
+                color: var(--text-color);
+                padding-top: 10px;
+                padding-bottom: 5px;
+                font-size: 13px;
+                font-weight: 500;
+            }
+
+            .input {
+                height: 40px;
+                padding: 0 1rem;
+                background: var(--input-color);
+                border-radius: 3rem;
+
+                input, select, textarea {
+                    color: rgb(129 129 129);
+                    background: none;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    font-size: 13px;
+                    font-weight: 500;
+                    &::placeholder {
+                        font-size: 13px;
+                    }
+                }
+
+                .icon {
+                    font-size: 18px;
+                    color: var(--primary-color)
+                    !important;
+                    margin-left: 10px;
+                }
+            }
+
+
+            .message {
+                padding: 1rem 1rem !important;
+                height: 7rem !important;
+                border-radius: 0.7rem;
+
+                textarea {
+                    resize: none;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .btn {
+                margin: 1rem auto;
+                color: var(--white-color);
+                font-weight: 600;
+                justify-content: space-between;
+                gap: .5rem;
+
+                a {
+                    display: flex;
+                    column-gap: 7px;
+                }
+
+                .icon {
+                    align-self: center;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+
+        // .booknowForm {
+        //     display: grid;
+        //     grid-template-columns: repeat(3, 1fr);
+        //     column-gap: 5rem;
+        // }
+}
+
+@media screen and (min-width: 660px) {
+    .booknowBody {
+        .booknowForm {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .concrensInput, .btn {
+                grid-column: 1 / 3;
+            }
+        }
+    }
+}

@@ -13,7 +13,7 @@
     --card-background: rgb(225, 225, 235);
 }
 
-.body {
+.packageDetailBody {
     .container {
         display: flex;
         flex-direction: column;
@@ -125,7 +125,7 @@
 }
 
 @media screen and (min-width: 375px) {
-    .body {
+    .packageDetailBody {
         .container {
             .destinationRouting {
                 .dailyRoutingItem {
