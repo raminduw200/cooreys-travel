@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { GrLocation } from 'react-icons/gr'
-import { HiFilter } from 'react-icons/hi'
+import { BsFillBookmarkCheckFill } from 'react-icons/bs'
 import './contactus.css';
 
 const ContactUs = () => {
@@ -65,7 +65,7 @@ const ContactUs = () => {
             </div>
 
             <div className="searchOptions flex">
-                <HiFilter className='icon' />
+                <BsFillBookmarkCheckFill className='icon' />
                 <button type="submit" value="send">INQUIRE !</button>
             </div>
         </form>
