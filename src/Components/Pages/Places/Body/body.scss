@@ -1,0 +1,88 @@
+/* Colors */
+:root{
+    --primary-color: hsl(199, 100%, 33%);
+    --secondary-color: hsl(187, 85%, 43%);
+    --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --white-color: #FFF;
+    --black-color: hsl(201, 33%, 16%);
+    --text-color: hsl(240, 4%, 36%);
+    --white-color-deam: hsl(0, 0%, 93%);
+    --gray-text: rgb(190, 190, 190);
+    --input-color: rgb(229, 229, 229);
+    --body-color: rgb(240, 240, 246);
+    --card-background: rgb(225, 225, 235);
+}
+
+.placesBody {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+        .title{
+            position: relative;
+            width: max-content;
+            color: var(--text-color);
+            margin: 1rem 0;
+            z-index: 2;
+
+            &:after {
+                position: absolute;
+                content: '';
+                background: var(--secondary-color);
+                height: 5px;    
+                width: 55px !important;
+                right: -8px;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+
+        .description {
+            display: flex;
+            flex-direction: column;
+            // column-gap: 4rem;
+            row-gap: 2rem;
+
+
+            .imageContainer {
+                width: 100%;
+                height: auto;
+            }
+
+            .textContainer {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .placesBody {
+        .container {
+            .description {
+                flex-direction: row;
+                column-gap: 2rem;
+                align-items: center;
+
+                .imageContainer {
+                    width: 160rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .placesBody {
+        .container {
+            .description {
+                .imageContainer {
+                    width: 60rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
