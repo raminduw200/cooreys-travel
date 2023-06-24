@@ -32,8 +32,8 @@
                 content: '';
                 background: var(--secondary-color);
                 height: 5px;
-                width: 50px;
-                right: 0;
+                width: 55px !important;
+                right: 35px;
                 bottom: 5px;
                 z-index: -1;
             }
@@ -112,16 +112,21 @@
                     border-top: 1.5px solid var(--gray-text);
                 }
 
-                .btn {
-                    margin-top: 1rem;
-                    color: var(--white-color);
-                    font-weight: 600;
-                    justify-content: space-between;
-                    gap: .5rem;
+                .center {
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
 
-                    .icon {
-                        align-self: center;
-                        font-size: 18px;
+                    .btn {
+                        color: var(--white-color);
+                        font-weight: 600;
+                        justify-content: space-between;
+                        gap: .5rem;
+
+                        .icon {
+                            align-self: center;
+                            font-size: 18px;
+                        }
                     }
                 }
             }

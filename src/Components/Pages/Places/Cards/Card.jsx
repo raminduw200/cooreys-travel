@@ -67,11 +67,13 @@ const Main = () => {
                                         <p>{shortDesc}</p>
                                     </div>
 
-                                    {/* <button className="btn flex">
-                                        <Link to={{pathname: "/package_detail", search: "?id=" + id}}>
-                                            DETAILS <HiOutlineClipboardCheck className='icon'/>
-                                        </Link>
-                                    </button> */}
+                                    <div className="center">
+                                        <button className="btn flex">
+                                            <Link to={{pathname: "/place", search: "?id=" + id}}>
+                                                DETAILS <HiOutlineClipboardCheck className='icon'/>
+                                            </Link>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         )
