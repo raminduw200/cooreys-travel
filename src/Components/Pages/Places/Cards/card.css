@@ -1,0 +1,140 @@
+:root {
+  --primary-color: hsl(199, 100%, 33%);
+  --secondary-color: hsl(187, 85%, 43%);
+  --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --white-color: #FFF;
+  --black-color: hsl(201, 33%, 16%);
+  --text-color: hsl(240, 4%, 36%);
+  --white-color-deam: hsl(0, 0%, 93%);
+  --gray-text: rgb(190, 190, 190);
+  --input-color: rgb(229, 229, 229);
+  --body-color: rgb(240, 240, 246);
+  --card-background: rgb(225, 225, 235);
+  --card-hover: rgb(255, 255, 255);
+}
+
+.cardList {
+  width: 100%;
+  padding: 0 0 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.cardList .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--text-color);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.cardList .secTitle .title:after {
+  position: absolute;
+  content: "";
+  background: var(--secondary-color);
+  height: 5px;
+  width: 55px !important;
+  right: 35px;
+  bottom: 5px;
+  z-index: -1;
+}
+.cardList .secContent {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.cardList .secContent .singleDestination {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--card-background);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.cardList .secContent .singleDestination:hover {
+  background-color: var(--card-hover);
+  box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+  transition: 0.3s ease;
+}
+.cardList .secContent .singleDestination .imageDiv {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.cardList .secContent .singleDestination .imageDiv img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease;
+}
+.cardList .secContent .singleDestination .imageDiv:hover img {
+  transform: scale(1.1);
+}
+.cardList .secContent .singleDestination .cardInfo {
+  padding: 1rem;
+}
+.cardList .secContent .singleDestination .cardInfo .destTitle {
+  color: var(--black-color);
+  font-size: 1.25rem;
+}
+.cardList .secContent .singleDestination .cardInfo .continent {
+  gap: 0.5rem;
+}
+.cardList .secContent .singleDestination .cardInfo .continent .icon {
+  color: var(--text-color);
+  font-size: 18px;
+}
+.cardList .secContent .singleDestination .cardInfo .continent .name {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+.cardList .secContent .singleDestination .cardInfo .desc {
+  font-size: 13.5px;
+  color: var(--text-color);
+  font-weight: 500;
+  text-align: justify;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-top: 1.5px solid var(--gray-text);
+}
+.cardList .secContent .singleDestination .cardInfo .center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.cardList .secContent .singleDestination .cardInfo .center .btn {
+  color: var(--white-color);
+  font-weight: 600;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.cardList .secContent .singleDestination .cardInfo .center .btn .icon {
+  align-self: center;
+  font-size: 18px;
+}
+
+/* ------------------ MEDIA QURIES ------------------ */
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155px !important;
+  }
+  .secContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}
+@media screen and (min-width: 840px) {
+  .secContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secContent .singleDestination {
+    height: auto;
+  }
+}/*# sourceMappingURL=card.css.map */

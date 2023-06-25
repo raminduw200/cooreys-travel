@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './Components/Pages/Home/HomePage';
 import PackageDetailPage from './Components/Pages/PackageDetail/PackageDetailPage';
 import BookNowPage from './Components/Pages/BookNow/BookNowPage';
+import PlacesListPage from './Components/Pages/Places/PlacesList';
+import PlaceDetailPage from './Components/Pages/PlaceDetail/PlaceDetailPage';
 
 // import PlacesListPage from './Components/Pages/Places/PlacesList';
 import AboutPage from './Components/Pages/About/AboutPage';
@@ -19,9 +21,9 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="/package_detail" element={<PackageDetailPage />} />
         <Route path="/book_now" element={<BookNowPage />} />
+        <Route path="/places" element={<PlacesListPage />} />
+        <Route path="/place" element={<PlaceDetailPage />} />
         <Route path="/about" element={<AboutPage />} />
-
-        {/* <Route path="/places" element={<PlacesListPage />} /> */}
         <Route path="*" element={<HomePage />} />
       </Routes>
       <Footer />
