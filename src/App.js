@@ -8,6 +8,8 @@ import BookNowPage from './Components/Pages/BookNow/BookNowPage';
 import PlacesListPage from './Components/Pages/Places/PlacesList';
 import PlaceDetailPage from './Components/Pages/PlaceDetail/PlaceDetailPage';
 
+// import PlacesListPage from './Components/Pages/Places/PlacesList';
+import AboutPage from './Components/Pages/About/AboutPage';
 import NavBar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer'
 
@@ -21,6 +23,7 @@ function App() {
         <Route path="/book_now" element={<BookNowPage />} />
         <Route path="/places" element={<PlacesListPage />} />
         <Route path="/place" element={<PlaceDetailPage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<HomePage />} />
       </Routes>
       <Footer />

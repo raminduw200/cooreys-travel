@@ -1,0 +1,114 @@
+/* Colors */
+:root {
+  --primary-color: hsl(199, 100%, 33%);
+  --secondary-color: hsl(187, 85%, 43%);
+  --gradient-color: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --white-color: #FFF;
+  --black-color: hsl(201, 33%, 16%);
+  --text-color: hsl(240, 4%, 36%);
+  --white-color-deam: hsl(0, 0%, 93%);
+  --gray-text: rgb(190, 190, 190);
+  --input-color: rgb(229, 229, 229);
+  --body-color: rgb(240, 240, 246);
+  --card-background: rgb(225, 225, 235);
+}
+
+.packageDetailBody .container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+.packageDetailBody .container .bodyHeader {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 0;
+}
+.packageDetailBody .container .packageIncludes {
+  margin-bottom: 3rem;
+}
+.packageDetailBody .container .packageIncludes .packageIncludesTitle {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+.packageDetailBody .container .packageIncludes .packageIncludesTitle .icon {
+  font-size: 25px;
+}
+.packageDetailBody .container .packageIncludes .packageIncludesTitle::after {
+  position: absolute;
+  content: "";
+  background: var(--secondary-color);
+  height: 5px;
+  width: 100px;
+  left: 120px;
+  top: 23px;
+  z-index: -1;
+}
+.packageDetailBody .container .packageIncludes .packageIncludeDesc {
+  line-height: 1.5;
+  text-align: justify;
+  color: var(--text-color);
+  padding: 0 2rem;
+}
+.packageDetailBody .container .packageIncludes .packageIncludeDesc li {
+  list-style: disc !important;
+}
+.packageDetailBody .container .destinationRouting {
+  display: flex;
+  flex-direction: column;
+}
+.packageDetailBody .container .destinationRouting .destinationRoutingTitle {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+.packageDetailBody .container .destinationRouting .destinationRoutingTitle .icon {
+  font-size: 25px;
+}
+.packageDetailBody .container .destinationRouting .destinationRoutingTitle::after {
+  position: absolute;
+  content: "";
+  background: var(--secondary-color);
+  height: 5px;
+  width: 100px;
+  left: 62px;
+  bottom: 2px;
+  z-index: -1;
+}
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-text);
+  padding: 1rem 0;
+}
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames {
+  padding-right: 1rem;
+}
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames .dailyRoutingItemName {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemNames .dailyRoutingItemName small {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gray-text);
+}
+.packageDetailBody .container .destinationRouting .dailyRouting .dailyRoutingItem .dailyRoutingItemDesc {
+  text-align: right;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 375px) {
+  .packageDetailBody .container .destinationRouting .dailyRoutingItem {
+    padding: 1rem 2rem;
+  }
+}/*# sourceMappingURL=body.css.map */

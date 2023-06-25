@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React, { useEffect,useRef }from 'react'
 import './body.css'
+import emailjs from '@emailjs/browser';
 
 import { BsBookmarkCheckFill } from 'react-icons/bs'
 import { useLocation } from 'react-router-dom';
@@ -16,6 +17,19 @@ const Home = () => {
         Aos.init({ duration: 1500 })
     }, [])
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_nqk6pht', 'template_vrui47r', form.current, '3dMJdCmALptC8uIe4')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <section className='booknowBody'>
             <div className="container">
@@ -25,7 +39,7 @@ const Home = () => {
                     </h3>
                 </div>
 
-                <form className='booknowForm' data-aos="fade-up" method='post' action='/'>
+                <form ref={form} onSubmit={sendEmail} className='booknowForm'  data-aos="fade-up" >
                     <div className="nameInput" data-aos="fade-up">
                         <label htmlFor='name'>Name</label>
                         <div className="input flex">
@@ -43,7 +57,7 @@ const Home = () => {
                     <div className="phoneInput" data-aos="fade-up">
                         <label htmlFor='phone'>Telephone</label>
                         <div className="input flex">
-                            <input type='text' name='phone' placeholder='Phone' required />
+                            <input type='text' name='telephone' placeholder='Phone' required />
                         </div>
                     </div>
                     
@@ -75,7 +89,7 @@ const Home = () => {
                     <div className="adultsCountInput" data-aos="fade-up">
                         <label htmlFor='adlultsCount'>No. of Adults</label>
                         <div className="input flex">
-                            <input type='text' name='adlultsCount' placeholder='Adults count' required />
+                            <input type='text' name='adultsCount' placeholder='Adults count' required />
                         </div>
                     </div>
 
@@ -93,10 +107,8 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <button className="btn flex" data-aos="fade-down">
-                        <Link to="/">
-                            BOOK NOW <BsBookmarkCheckFill className='icon'/>
-                        </Link>
+                    <button  type="submit" value="send" className="btn flex" data-aos="fade-down">
+                        Book NOW
                     </button>
                 </form>
             </div>
