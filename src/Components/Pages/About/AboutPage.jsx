@@ -1,12 +1,12 @@
 import React from 'react'
 import Body from './Body/Body';
+import Header from './Header/Header';
 
 function AboutPage(){
     return (
-
         <>
-           {/* <h1 >hello</h1> */}
-           <Body/>
+            <Header/>
+            <Body/>
         </>
 
 

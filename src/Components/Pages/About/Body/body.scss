@@ -13,109 +13,121 @@
     --card-background: rgb(225, 225, 235);
 }
 
-.packageDetailBody {
+.aboutUsBody {
     .container {
         display: flex;
         flex-direction: column;
         padding: 3rem 2rem;
 
-        .bodyHeader {
-            display: flex;
-            justify-content: flex-end;
-            padding: 1rem 0;
+        .discription {
+            margin-bottom: 2rem;
+            text-align: justify;
+            color: var(--text-color);
         }
 
-        .packageIncludes {
-            margin-bottom: 3rem;
-
-            .packageIncludesTitle {
+        .contactUs {
+            .contactUsHeader {
                 display: flex;
-                column-gap: 1rem;
-                font-size: 20px;
-                font-weight: 600;
-                color: var(--text-color);
-                margin-bottom: 1rem;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                row-gap: 1rem;
 
-                .icon {
-                    font-size: 25px;
-                }
+                padding: 1rem 1rem;
+                margin-bottom: 2rem;
+                border-radius: 1rem;
 
-                &::after {
-                    position: absolute;
-                    content: "";
-                    background: var(--secondary-color);
-                    height: 5px;
-                    width: 100px;
-                    left: 120px;
-                    top: 23px;
-                    z-index: -1;
-                }
-            }
-            
-            .packageIncludeDesc {
-                line-height: 1.5;
-                text-align: justify;
-                color: var(--text-color);
-                padding: 0 2rem;
-            
-                li {
-                    list-style: disc !important;
-                }
-            }
-        }
+                text-align: center;
+                font-size: 12px;
 
-        .destinationRouting {
-            display: flex;
-            flex-direction: column;
-            
-            .destinationRoutingTitle{
-                display: flex;
-                column-gap: 1rem;
-                font-size: 20px;
-                font-weight: 600;
-                color: var(--text-color);
-                margin-bottom: 1rem;
-
-                .icon {
-                    font-size: 25px;
-                }
-
-                &::after {
-                    position: absolute;
-                    content: "";
-                    background: var(--secondary-color);
-                    height: 5px;
-                    width: 100px;
-                    left: 62px;
-                    bottom: 2px;
-                    z-index: -1;
-                }
-            }
-            .dailyRouting {
-                .dailyRoutingItem {
-                    display: flex;
-                    justify-content: space-between;
-                    border-bottom: 1px solid var(--gray-text);
-                    padding: 1rem 0;
-
-                    .dailyRoutingItemNames {
-                        padding-right: 1rem;
-
-                        .dailyRoutingItemName {
-                            font-size: 16px;
-                            font-weight: 600;
-                            color: var(--text-color);
-
-                            small {
-                                font-size: 14px;
-                                font-weight: 400;
-                                color: var(--gray-text);
-                            }
-                        }
+                color: var(--white-color);
+                background: var(--gradient-color);
+          
+                .email, .call {
+                    color: var(--white-color);
+                    h3 {
+                        display: flex;
+                        column-gap: 10px;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
                     }
+                }
+            
+                .line {
+                    width: 100px;
+                    height: 1px;
+                    background-color: var(--white-color);
+                }
+            }
+        }     
+        
+        .deals {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 2rem;
+            margin-bottom: 2rem;
+            
+            .deal {
+                display: flex;
+                align-items: center;
+                column-gap: 1rem;
+                color: var(--text-color);
+                font-size: 13px;
 
-                    .dailyRoutingItemDesc {
-                        text-align: right;
+                .icon {
+                    border-radius: 7px;
+                    height: 70px;
+                    width: 70px;
+                    color: var(--white-color);
+                    background: var(--gradient-color);
+                    display: flex;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                svg {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .follow-us {
+            .title {
+                position: relative;
+                width: max-content;
+                color: var(--text-color);
+                margin: 1rem 0;
+                z-index: 2;
+    
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: var(--secondary-color);
+                    height: 5px;
+                    width: 100px !important;
+                    right: -10px;
+                    top: 24px;
+                    z-index: -1;
+                }
+            }
+
+            .iconsTray {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 0.5rem;
+                font-size: 15px;
+                align-items: center;
+                justify-content: center;
+
+                .facebook, .insta, .whatsapp, .tripadvisor {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--text-color);
+
+                    a{
                         color: var(--text-color);
                     }
                 }
@@ -133,5 +145,46 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .aboutUsBody {
+        .container {
+            .deals {
+                grid-template-columns: repeat(2, 1fr);        
+           }
+
+        .follow-us {
+                .iconsTray {
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .aboutUsBody {
+        .container {
+            .contactUs {
+                .contactUsHeader {
+                    flex-direction: row;
+                    padding: 1rem 10rem;
+                    font-size: 16px;
+                    
+                    .line {
+                        width: 1px;
+                        height: 50px;
+                    }
+                }
+            }
+
+            .deals {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
     }
 }
