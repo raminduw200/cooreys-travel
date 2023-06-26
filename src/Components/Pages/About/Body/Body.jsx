@@ -1,506 +1,134 @@
 import React, { useEffect } from 'react'
 import './body.css'
 
-import { MdModeOfTravel, MdOutlineCardTravel } from 'react-icons/md'
-import { useLocation } from 'react-router-dom';
+import { MdEmail } from 'react-icons/md'
+import { IoLogoWhatsapp } from 'react-icons/io'
+import { RiMoneyDollarBoxFill, RiWindyFill, RiGuideFill, RiHotelBedFill } from 'react-icons/ri'
+import { MdOutlineToll } from 'react-icons/md'
+import { FaTripadvisor } from 'react-icons/fa'
+import { HiWifi } from 'react-icons/hi'
+import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-
-const Data = [
-    {
-        id: 1,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
-        packageName: 'Light Traveler',
-        location: 'Sri Lanka',
-        days: "6 Days",
-        fees: "NEGOTIABLE",
-        shortDesc: 'Sigriya, Dambulla / Matale / Kandy, Nuwaraeliya, Ella, Mirissa / Whale Watching, Colombo',
-        packageIncludes: [
-            "Welcome assistance on the arrival at the Airport",
-            "Transport exclusively by air-conditioned vehicles with English Speaking chauffeur",
-            "Standard hotels with breakfast",
-            "All transfers according to programme including airport transfers",
-            "WiFi and water bottles in the vehicle",
-            "All prevailing taxes on transport",
-        ],
-        routing: [
-            {
-                id: 1,
-                names: [
-                    'Colombo'
-                ],
-                desc: 'Arrival and Transfer to Pinnawala',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-            {
-                id: 2,
-                names: [
-                    'Pinnawala', 
-                    'Dambulla', 
-                    'Sigiriya'
-                ],
-                desc: 'Visit Pinnawala Elephant Orphanage, Dambulla Cave Temple, Sigiriya Rock Fortress',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Kandy-Sri-Lanka.jpg',
-            },
-            {
-                id: 3,
-                names: [
-                    'Polonnaruwa',
-                    'Trinco'
-                ],
-                desc: 'Visit Polonnaruwa Ancient City, Trincomalee',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Trincomalee-Sri-Lanka.jpg',
-            },
-            {
-                id: 4,
-                names: [
-                    'Leisure Day'
-                ],
-                desc: 'Leisure Day at Trincomalee',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Trincomalee-Sri-Lanka.jpg',
-            },
-            {
-                id: 5,
-                names: [
-                    'Arugambay',
-                ],
-                desc: 'Visit Arugambay Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Arugambay-Sri-Lanka.jpg',
-            },
-            {
-                id: 6,
-                names: [
-                    'Leisure Day'
-                ],
-                desc: 'Leisure Day at Arugambay',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Arugambay-Sri-Lanka.jpg',
-            },
-            {
-                id: 7,
-                names: [
-                    'Kandy'
-                ],
-                desc: 'Visit Kandy Temple of Tooth Relic, Kandy City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Kandy-Sri-Lanka.jpg',
-            },
-            {
-                id: 8,
-                names: [
-                    'Nuwara Eliya'
-                ],
-                desc: 'Visit Tea Plantation, Tea Factory, Nuwara Eliya City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Nuwara-Eliya-Sri-Lanka.jpg',
-            },
-            {
-                id: 9,
-                names: [
-                    'Ella'
-                ],
-                desc: 'Train journey to Ella, Visit Nine Arch Bridge, Little Adam’s Peak',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Ella-Sri-Lanka.jpg',
-            },
-            {
-                id: 10,
-                names: [
-                    'Yala'
-                ],
-                desc: 'Visit Yala National Park',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Yala-Sri-Lanka.jpg',
-            },
-            {
-                id: 11,
-                names: [
-                    'Mirissa',
-                    'Weligama'
-                ],
-                desc: 'Visit Mirissa Beach, Weligama Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Mirissa-Sri-Lanka.jpg',
-            },
-            {
-                id: 12,
-                names: [
-                    'Galle',
-                    'Hikkaduwa'
-                ],
-                desc: 'Visit Galle Fort, Hikkaduwa Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Galle-Sri-Lanka.jpg',
-            },
-            {
-                id: 13,
-                names: [
-                    'Leisure Day',
-                ],
-                desc: 'Leisure Day at Hikkaduwa',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Hikkaduwa-Sri-Lanka.jpg',
-            },
-            {
-                id: 14,
-                names: [
-                    'Colombo'
-                ],
-                desc: 'Visit Colombo City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-            {
-                id: 15,
-                names: [
-                    'Departure'
-                ],
-                desc: 'Departure',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-        ]
-    },
-    {
-        id: 2,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
-        packageName: 'Explorer',
-        location: 'Sri Lanka',
-        days: "10 Days",
-        fees: "NEGOTIABLE",
-        shortDesc: 'Negambo, Anuradhapura / Dambulla, Sigiriya, Matale / Kandy, Nuwaraeliya / Horton Plains, Ella, Udawalawa / Mirissa, Whale Watching / Galle',
-        packageIncludes: [
-            "Welcome assistance on the arrival at the Airport",
-            "Transport exclusively by air-conditioned vehicles with English Speaking chauffeur",
-            "Standard hotels with breakfast",
-            "All transfers according to programme including airport transfers",
-            "WiFi and water bottles in the vehicle",
-            "All prevailing taxes on transport",
-        ],
-        routing: [
-            {
-                id: 1,
-                names: [
-                    'Colombo'
-                ],
-                desc: 'Arrival and Transfer to Pinnawala',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-            {
-                id: 2,
-                names: [
-                    'Pinnawala', 
-                    'Dambulla', 
-                    'Sigiriya'
-                ],
-                desc: 'Visit Pinnawala Elephant Orphanage, Dambulla Cave Temple, Sigiriya Rock Fortress',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Kandy-Sri-Lanka.jpg',
-            },
-            {
-                id: 3,
-                names: [
-                    'Polonnaruwa',
-                    'Trinco'
-                ],
-                desc: 'Visit Polonnaruwa Ancient City, Trincomalee',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Trincomalee-Sri-Lanka.jpg',
-            },
-            {
-                id: 4,
-                names: [
-                    'Leisure Day'
-                ],
-                desc: 'Leisure Day at Trincomalee',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Trincomalee-Sri-Lanka.jpg',
-            },
-            {
-                id: 5,
-                names: [
-                    'Arugambay',
-                ],
-                desc: 'Visit Arugambay Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Arugambay-Sri-Lanka.jpg',
-            },
-            {
-                id: 6,
-                names: [
-                    'Leisure Day'
-                ],
-                desc: 'Leisure Day at Arugambay',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Arugambay-Sri-Lanka.jpg',
-            },
-            {
-                id: 7,
-                names: [
-                    'Kandy'
-                ],
-                desc: 'Visit Kandy Temple of Tooth Relic, Kandy City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Kandy-Sri-Lanka.jpg',
-            },
-            {
-                id: 8,
-                names: [
-                    'Nuwara Eliya'
-                ],
-                desc: 'Visit Tea Plantation, Tea Factory, Nuwara Eliya City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Nuwara-Eliya-Sri-Lanka.jpg',
-            },
-            {
-                id: 9,
-                names: [
-                    'Ella'
-                ],
-                desc: 'Train journey to Ella, Visit Nine Arch Bridge, Little Adam’s Peak',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Ella-Sri-Lanka.jpg',
-            },
-            {
-                id: 10,
-                names: [
-                    'Yala'
-                ],
-                desc: 'Visit Yala National Park',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Yala-Sri-Lanka.jpg',
-            },
-            {
-                id: 11,
-                names: [
-                    'Mirissa',
-                    'Weligama'
-                ],
-                desc: 'Visit Mirissa Beach, Weligama Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Mirissa-Sri-Lanka.jpg',
-            },
-            {
-                id: 12,
-                names: [
-                    'Galle',
-                    'Hikkaduwa'
-                ],
-                desc: 'Visit Galle Fort, Hikkaduwa Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Galle-Sri-Lanka.jpg',
-            },
-            {
-                id: 13,
-                names: [
-                    'Leisure Day',
-                ],
-                desc: 'Leisure Day at Hikkaduwa',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Hikkaduwa-Sri-Lanka.jpg',
-            },
-            {
-                id: 14,
-                names: [
-                    'Colombo'
-                ],
-                desc: 'Visit Colombo City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-            {
-                id: 15,
-                names: [
-                    'Departure'
-                ],
-                desc: 'Departure',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-        ]
-    },
-    {
-        id: 3,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
-        packageName: 'Extreme Traveler',
-        location: 'Sri Lanka',
-        days: "15 Days",
-        fees: "NEGOTIABLE",
-        shortDesc: 'Pinnawala / Dambulla / Sigiriya, Polonnaruwa / Trincamalee, Arugambay, Kandy, Nuwaraeliya, Ella, Yala National Park, Weligama / Mirissa, Galle / Hikkaduwa, Colombo',
-        packageIncludes: [
-            "Welcome assistance on the arrival at the Airport",
-            "Transport exclusively by air-conditioned vehicles with English Speaking chauffeur",
-            "Standard hotels with breakfast",
-            "All transfers according to programme including airport transfers",
-            "WiFi and water bottles in the vehicle",
-            "All prevailing taxes on transport",
-        ],
-        routing: [
-            {
-                id: 1,
-                names: [
-                    'Colombo'
-                ],
-                desc: 'Arrival and Transfer to Pinnawala',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-            {
-                id: 2,
-                names: [
-                    'Pinnawala', 
-                    'Dambulla', 
-                    'Sigiriya'
-                ],
-                desc: 'Visit Pinnawala Elephant Orphanage, Dambulla Cave Temple, Sigiriya Rock Fortress',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Kandy-Sri-Lanka.jpg',
-            },
-            {
-                id: 3,
-                names: [
-                    'Polonnaruwa',
-                    'Trinco'
-                ],
-                desc: 'Visit Polonnaruwa Ancient City, Trincomalee',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Trincomalee-Sri-Lanka.jpg',
-            },
-            {
-                id: 4,
-                names: [
-                    'Leisure Day'
-                ],
-                desc: 'Leisure Day at Trincomalee',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Trincomalee-Sri-Lanka.jpg',
-            },
-            {
-                id: 5,
-                names: [
-                    'Arugambay',
-                ],
-                desc: 'Visit Arugambay Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Arugambay-Sri-Lanka.jpg',
-            },
-            {
-                id: 6,
-                names: [
-                    'Leisure Day'
-                ],
-                desc: 'Leisure Day at Arugambay',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Arugambay-Sri-Lanka.jpg',
-            },
-            {
-                id: 7,
-                names: [
-                    'Kandy'
-                ],
-                desc: 'Visit Kandy Temple of Tooth Relic, Kandy City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Kandy-Sri-Lanka.jpg',
-            },
-            {
-                id: 8,
-                names: [
-                    'Nuwara Eliya'
-                ],
-                desc: 'Visit Tea Plantation, Tea Factory, Nuwara Eliya City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Nuwara-Eliya-Sri-Lanka.jpg',
-            },
-            {
-                id: 9,
-                names: [
-                    'Ella'
-                ],
-                desc: 'Train journey to Ella, Visit Nine Arch Bridge, Little Adam’s Peak',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Ella-Sri-Lanka.jpg',
-            },
-            {
-                id: 10,
-                names: [
-                    'Yala'
-                ],
-                desc: 'Visit Yala National Park',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Yala-Sri-Lanka.jpg',
-            },
-            {
-                id: 11,
-                names: [
-                    'Mirissa',
-                    'Weligama'
-                ],
-                desc: 'Visit Mirissa Beach, Weligama Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Mirissa-Sri-Lanka.jpg',
-            },
-            {
-                id: 12,
-                names: [
-                    'Galle',
-                    'Hikkaduwa'
-                ],
-                desc: 'Visit Galle Fort, Hikkaduwa Beach',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Galle-Sri-Lanka.jpg',
-            },
-            {
-                id: 13,
-                names: [
-                    'Leisure Day',
-                ],
-                desc: 'Leisure Day at Hikkaduwa',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Hikkaduwa-Sri-Lanka.jpg',
-            },
-            {
-                id: 14,
-                names: [
-                    'Colombo'
-                ],
-                desc: 'Visit Colombo City Tour',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-            {
-                id: 15,
-                names: [
-                    'Departure'
-                ],
-                desc: 'Departure',
-                imgSrc: 'https://www.srilankatravelandtourism.com/wp-content/uploads/2019/07/Colombo-Sri-Lanka.jpg',
-            },
-        ]
-    },
-]
-
 const Home = () => {
-    const params = new URLSearchParams(useLocation().search);
-    const idParam = params.get('id');
-
-    const selectedPackage = Data.filter((item) => {
-        return item.id === parseInt(idParam)
-    })
 
     useEffect(() => {
         Aos.init({ duration: 1500 })
     }, [])
 
     return (
-        selectedPackage.map(({id, packageIncludes, routing}) => {
-        return (
-        <section className='packageDetailBody'>
+        <section className='aboutUsBody'>
             <div className="container">
-                <div className="packageIncludes">
-                    <div data-aos="fade-up" className="packageIncludesTitle">
-                        <MdOutlineCardTravel className='icon'/> Package Includes
-                    </div>
-                    <ul className='packageIncludeDesc'>
-                    {packageIncludes.map((item, index) => {
-                        return (<li key={index} data-aos="fade-up">{item}</li>)
-                    })}
-                    </ul>
+                <div className="discription">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, modi, rem commodi nostrum doloremque nihil quisquam maxime quibusdam laborum id maiores at a suscipit, voluptatum provident magni quis aspernatur doloribus!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt numquam iure, aliquam optio rem sequi necessitatibus! Quas, architecto quibusdam nobis mollitia nam iste corporis minus explicabo voluptatem nisi nemo.
+                        Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eligendi quod iusto laudantium veniam, eaque rem quasi blanditiis, veritatis praesentium exercitationem voluptatum odio. Unde soluta iusto autem ducimus eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut, blanditiis incidunt sint neque, nam inventore minima minus, molestiae quisquam ea mollitia quasi? Debitis ipsa consequatur possimus ipsum neque quaerat.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet porro quas tempore tenetur ipsa, voluptatem, voluptatum atque aspernatur eligendi possimus vero nulla! Ullam cupiditate, nisi quaerat quod iure a perferendis?
+                    </p>
                 </div>
-                <div className="destinationRouting">
-                    <div data-aos="fade-right" className="destinationRoutingTitle">
-                        <MdModeOfTravel className='icon'/> Daily Routing
-                    </div>
-                    <div className="dailyRouting">
-                        {routing.map(({id, names, desc}) => {
-                            const namesArr = []
 
-                            for (let i = 0; i < names.length; i++) {
-                                if (i !== names.length - 1) {
-                                    namesArr.push(<span className='dailyRoutingItemName'>{names[i]} <small>OR</small> </span>)
-                                } else {
-                                    namesArr.push(<span className='dailyRoutingItemName'>{names[i]}</span>)
-                                }
-                            }
-                            return (
-                                <div data-aos="fade-right" className="dailyRoutingItem" key={id}>
-                                    <div className="dailyRoutingItemNames">
-                                        {namesArr}
-                                    </div>
-                                    <span className='dailyRoutingItemDesc'>{desc}</span>
-                                </div>
-                            )
-                        })}
+                <div className="contactUs">
+                    <div className="contactUsHeader">
+                        <a href="mailto:coorey49@gmail.com" className="email">
+                            <h3 data-aos="fade-right">Email Us <MdEmail /></h3>
+                            <h2 data-aos="fade-right">coorey49@gmail.com</h2>
+                        </a>
+                        <div data-aos="fade-up" className="line"></div>
+                        <a href="tel:+94712345678" className="call">
+                            <h3 data-aos="fade-left">Call Us <IoLogoWhatsapp /></h3>
+                            <h2 data-aos="fade-left">+94 712345678</h2>
+                        </a>
                     </div>
                 </div>
 
+
+                <div className="discription">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, modi, rem commodi nostrum doloremque nihil quisquam maxime quibusdam laborum id maiores at a suscipit, voluptatum provident magni quis aspernatur doloribus!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt numquam iure, aliquam optio rem sequi necessitatibus! Quas, architecto quibusdam nobis mollitia nam iste corporis minus explicabo voluptatem nisi nemo.
+                        Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eligendi quod iusto laudantium veniam, eaque rem quasi blanditiis, veritatis praesentium exercitationem voluptatum odio. Unde soluta iusto autem ducimus eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut, blanditiis incidunt sint neque, nam inventore minima minus, molestiae quisquam ea mollitia quasi? Debitis ipsa consequatur possimus ipsum neque quaerat.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet porro quas tempore tenetur ipsa, voluptatem, voluptatum atque aspernatur eligendi possimus vero nulla! Ullam cupiditate, nisi quaerat quod iure a perferendis?
+                    </p>
+                </div>
+
+
+                <div className="deals">
+                    <div className="deal" data-aos="fade-up">
+                        <h3 className='icon'><RiMoneyDollarBoxFill /></h3>
+                        <h3>AFFORDABLE PRICES</h3>
+                    </div>
+                    <div className="deal" data-aos="fade-up">
+                        <h3 className='icon'><MdOutlineToll /></h3>
+                        <h3>TOLL-FREE ROADS</h3>
+                    </div>
+                    <div className="deal" data-aos="fade-up">
+                        <h3 className='icon'><RiWindyFill /></h3>
+                        <h3>AIR CONDITIONED VEHICLES</h3>
+                    </div>
+                    <div className="deal" data-aos="fade-up">
+                        <h3 className='icon'><RiGuideFill /></h3>
+                        <h3>ENGLISH CHAUFFEUR</h3>
+                    </div>
+                    <div className="deal" data-aos="fade-up">
+                        <h3 className='icon'><RiHotelBedFill /></h3>
+                        <h3>STANDARD HOTELS</h3>
+                    </div>
+                    <div className="deal" data-aos="fade-up">
+                        <h3 className='icon'><HiWifi /></h3>
+                        <h3>WiFi in CAR</h3>
+                    </div>
+                </div>
+
+
+                <div className="discription">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, modi, rem commodi nostrum doloremque nihil quisquam maxime quibusdam laborum id maiores at a suscipit, voluptatum provident magni quis aspernatur doloribus!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt numquam iure, aliquam optio rem sequi necessitatibus! Quas, architecto quibusdam nobis mollitia nam iste corporis minus explicabo voluptatem nisi nemo.
+                        Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eligendi quod iusto laudantium veniam, eaque rem quasi blanditiis, veritatis praesentium exercitationem voluptatum odio. Unde soluta iusto autem ducimus eligendi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut, blanditiis incidunt sint neque, nam inventore minima minus, molestiae quisquam ea mollitia quasi? Debitis ipsa consequatur possimus ipsum neque quaerat.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet porro quas tempore tenetur ipsa, voluptatem, voluptatum atque aspernatur eligendi possimus vero nulla! Ullam cupiditate, nisi quaerat quod iure a perferendis?
+                    </p>
+                </div>
+
+
+                <div className="follow-us">
+                    <h3 data-aos="fade-right" className="title">
+                        Follow Us
+                    </h3>
+                    <div className="iconsTray">
+                        <a href='' className="facebook" data-aos="fade-up">
+                            <div className="icon">
+                                <AiFillFacebook />
+                            </div>
+                            <p>Facebook</p>
+                        </a>
+                        <a className="insta" data-aos="fade-up" href=''>
+                            <div className="icon">
+                                <AiFillInstagram />
+                            </div>
+                            <p>Instagram</p>
+                        </a>
+                        <a className="whatsapp" data-aos="fade-up" href=''>
+                            <div className="icon">
+                                <IoLogoWhatsapp />
+                            </div>
+                            <p>WhatsApp</p>
+                        </a>
+                        <a className="tripadvisor" data-aos="fade-up">
+                            <div className="icon">
+                                <FaTripadvisor />
+                            </div>
+                            <p>Tripadvisor</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>)
-})
-)
 }
 
 export default Home
