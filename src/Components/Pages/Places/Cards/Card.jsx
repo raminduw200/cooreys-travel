@@ -5,31 +5,9 @@ import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Data2 from '../../../../place-list.json'
 
 
-const Data2 = [
-    {
-        id: 1,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
-        location: 'Galle',
-        district: 'Southern Province',
-        shortDesc: 'Galle is a city on the southwest coast of Sri Lanka. It’s known for Galle Fort, the fortified old city founded by Portuguese colonists in the 16th century. Stone sea walls, expanded by the Dutch, encircle car-free streets with architecture reflecting Portuguese, Dutch and British rule. Notable buildings include the 18th-century Dutch Reformed Church. Galle Lighthouse stands on the fort’s southeast tip.',
-    },
-    {
-        id: 2,
-        imgSrc: 'https://media.istockphoto.com/id/1285881901/photo/temple-of-the-sacred-tooth-relic-at-kandy-sri-lanka.jpg?s=612x612&w=0&k=20&c=gqnoXgatwo1Ar_oCYnGnmE3Ts7sn9DvYKPK0n6Mhca8=',
-        location: 'Kandy',
-        district: 'Central Province',
-        shortDesc: 'Kandy is a large city in central Sri Lanka. It\'s set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest. The city\'s heart is scenic Kandy Lake (Bogambara Lake), which is popular for strolling. Kandy is famed for sacred Buddhist sites, including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession.',
-    },
-    {
-        id: 3,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
-        location: 'Nuwara Eliya',
-        district: 'Central Province',
-        shortDesc: 'Galle is a city on the southwest coast of Sri Lanka. It’s known for Galle Fort, the fortified old city founded by Portuguese colonists in the 16th century. Stone sea walls, expanded by the Dutch, encircle car-free streets with architecture reflecting Portuguese, Dutch and British rule. Notable buildings include the 18th-century Dutch Reformed Church. Galle Lighthouse stands on the fort’s southeast tip.',
-    },
-]
 
 const Main = () => {
 
