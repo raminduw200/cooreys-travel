@@ -23,11 +23,11 @@ const Home = () => {
             <div className="container">
                 <div className="discription">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, modi, rem commodi nostrum doloremque nihil quisquam maxime quibusdam laborum id maiores at a suscipit, voluptatum provident magni quis aspernatur doloribus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt numquam iure, aliquam optio rem sequi necessitatibus! Quas, architecto quibusdam nobis mollitia nam iste corporis minus explicabo voluptatem nisi nemo.
-                        Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eligendi quod iusto laudantium veniam, eaque rem quasi blanditiis, veritatis praesentium exercitationem voluptatum odio. Unde soluta iusto autem ducimus eligendi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut, blanditiis incidunt sint neque, nam inventore minima minus, molestiae quisquam ea mollitia quasi? Debitis ipsa consequatur possimus ipsum neque quaerat.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet porro quas tempore tenetur ipsa, voluptatem, voluptatum atque aspernatur eligendi possimus vero nulla! Ullam cupiditate, nisi quaerat quod iure a perferendis?
+                        Welcome to <b>Cooreys Travel</b>, your premier travel agency and car rental service in Sri Lanka!
+
+                        At Cooreys Travel, we are dedicated to providing unforgettable experiences and seamless travel solutions for our valued customers. With our extensive knowledge of Sri Lanka's enchanting landscapes, rich history, and vibrant culture, we specialize in creating personalized itineraries that cater to your unique interests and preferences.
+
+                        Our team of experienced travel experts is committed to delivering exceptional service and ensuring every aspect of your journey is carefully planned and executed. Whether you are seeking a tranquil beach getaway, a thrilling wildlife adventure, a cultural exploration, or a combination of all three, we have the expertise to curate the perfect travel experience for you.
                     </p>
                 </div>
 
@@ -48,11 +48,11 @@ const Home = () => {
 
                 <div className="discription">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, modi, rem commodi nostrum doloremque nihil quisquam maxime quibusdam laborum id maiores at a suscipit, voluptatum provident magni quis aspernatur doloribus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt numquam iure, aliquam optio rem sequi necessitatibus! Quas, architecto quibusdam nobis mollitia nam iste corporis minus explicabo voluptatem nisi nemo.
-                        Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eligendi quod iusto laudantium veniam, eaque rem quasi blanditiis, veritatis praesentium exercitationem voluptatum odio. Unde soluta iusto autem ducimus eligendi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut, blanditiis incidunt sint neque, nam inventore minima minus, molestiae quisquam ea mollitia quasi? Debitis ipsa consequatur possimus ipsum neque quaerat.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet porro quas tempore tenetur ipsa, voluptatem, voluptatum atque aspernatur eligendi possimus vero nulla! Ullam cupiditate, nisi quaerat quod iure a perferendis?
+                        As passionate ambassadors of Sri Lanka, we take pride in showcasing the hidden gems and must-see attractions of our beautiful island nation. From the misty tea plantations of Nuwara Eliya to the ancient ruins of Polonnaruwa, from the bustling streets of Colombo to the serene beaches of Mirissa, we will guide you through the best Sri Lanka has to offer.
+
+                        In addition to our comprehensive travel services, we also provide top-quality car rental options for your convenience. Whether you prefer a comfortable sedan, a spacious SUV, or a rugged 4x4 for off-road adventures, our fleet of well-maintained vehicles caters to all your transportation needs.
+
+                        At Cooreys Travel, we understand that each traveler is unique, and we strive to create tailor-made experiences that exceed your expectations. Our attention to detail, commitment to customer satisfaction, and deep local insights set us apart as the travel agency of choice for exploring the wonders of Sri Lanka.
                     </p>
                 </div>
 
@@ -87,11 +87,7 @@ const Home = () => {
 
                 <div className="discription">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, modi, rem commodi nostrum doloremque nihil quisquam maxime quibusdam laborum id maiores at a suscipit, voluptatum provident magni quis aspernatur doloribus!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt numquam iure, aliquam optio rem sequi necessitatibus! Quas, architecto quibusdam nobis mollitia nam iste corporis minus explicabo voluptatem nisi nemo.
-                        Lorem ipsu Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut mollitia eligendi quod iusto laudantium veniam, eaque rem quasi blanditiis, veritatis praesentium exercitationem voluptatum odio. Unde soluta iusto autem ducimus eligendi.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut, blanditiis incidunt sint neque, nam inventore minima minus, molestiae quisquam ea mollitia quasi? Debitis ipsa consequatur possimus ipsum neque quaerat.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet porro quas tempore tenetur ipsa, voluptatem, voluptatum atque aspernatur eligendi possimus vero nulla! Ullam cupiditate, nisi quaerat quod iure a perferendis?
+                    Embark on an unforgettable journey with Cooreys Travel and let us guide you through the rich tapestry of Sri Lanka's landscapes, heritage, and warm hospitality. Contact us today and start planning your dream vacation with the experts.
                     </p>
                 </div>
 
