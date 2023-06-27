@@ -8,8 +8,6 @@ import 'aos/dist/aos.css'
 import Data from '../../../../place-list.json'
 
 
-
-
 const Home = () => {
     const params = new URLSearchParams(useLocation().search);
     const idParam = params.get('id');
@@ -37,7 +35,7 @@ const Home = () => {
                                 <div className="imageContainer">
                                     <img src={imgSrc[0]} alt={location}></img>
                                 </div>
-                                <div className="textContainer">
+                                <div className="textContainer" data-aos="fade-top">
                                     {desc}
                                 </div>
                             </div>

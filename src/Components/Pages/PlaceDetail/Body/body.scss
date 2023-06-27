@@ -47,17 +47,20 @@
             border-bottom: 3px solid var(--gray-text);
             padding-bottom: 2rem;
             .imageContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 width: 100%;
-
                 img {
-                    border-radius: 20px;
+                    border-radius: 1rem;
+                    width: 100%;
                 }
             }
+        }
 
-            .textContainer {
-                text-align: justify;
-                margin: 1rem 0;
-            }
+        .textContainer {
+            text-align: justify;
+            margin: 1rem 0;
         }
     }
 }
@@ -66,25 +69,11 @@
     .placeDetailBody {
         .container {
             .row {
-                flex-direction: row;
-                column-gap: 2rem;
-
                 .imageContainer {
-                    width: 100rem;
-                    // height: 500px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .placesBody {
-        .container {
-            .description {
-                .imageContainer {
-                    width: 60rem;
-                    height: auto;
+                    img {
+                        border-radius: 1rem;
+                        width: 80%;
+                    }
                 }
             }
         }
