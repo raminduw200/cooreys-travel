@@ -2,7 +2,7 @@ import Header from './Header/Header';
 import Body from './Body/Body';
 import React from 'react';
 
-function HomePage() {
+function PlaceDetailPage() {
   return (
     <>
     <Header />
@@ -11,4 +11,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default PlaceDetailPage;
