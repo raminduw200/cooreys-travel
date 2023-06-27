@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import './navbar.css'
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { RiWhatsappFill } from "react-icons/ri";
 import { TbGridDots } from "react-icons/tb";
+import { BsTelephoneFill } from "react-icons/bs";
 import { Outlet, Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -56,6 +58,17 @@ const NavBar = () => {
                     <TbGridDots className="icon"/>
                 </div>
             </header> 
+        
+            <div className="quickContact">
+                <a href="tel:+94740255541" class="floating-button">
+                    <BsTelephoneFill />
+                </a>
+
+                <a href="https://wa.me/94740255541/?text=Hello%20Coorey's%20Travel%20%21%21%0AName%3A%0AI%20would%20like%20to%20know%20more%20information%20about" class="floating-button whatsapp">
+                    <RiWhatsappFill />
+                </a>
+            </div>
+
         </section>
     )
 }

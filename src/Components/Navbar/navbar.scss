@@ -11,10 +11,43 @@
     --input-color: rgb(229, 229, 229);
     --body-color: rgb(240, 240, 246);
     --card-background: rgb(225, 225, 235);
-  }
+}
 
+.quickContact {
+    .floating-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+        z-index: 9999;
+        text-decoration: none;
+        font-size: 24px;
+        transition: background-color 0.3s;
+    }
 
-  .header {
+    .floating-button.whatsapp {
+        bottom: 100px;
+        background-color: #25d366;
+    }
+
+    .whatsapp {
+        font-size: 30px;
+    }
+    
+    .floating-button.whatsapp:hover, .floating-button:hover {
+        background-color: var(--secondary-color);
+    }  
+}
+
+.header {
     position: fixed;
     display: flex;
     align-items: center;
@@ -109,7 +142,7 @@
             color: var(--secondary-color);
         }
     }
-  }
+}
 /* ------------------ MEDIA QURIES ------------------ */
 
 @media screen and (min-width: 769px) {
