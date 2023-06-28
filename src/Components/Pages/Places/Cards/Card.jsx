@@ -1,12 +1,12 @@
 import React, {useEffect } from 'react'
-import './card.css'
+import Aos from 'aos'
 import { Link } from 'react-router-dom';
 import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi'
-import Data2 from '../../../../places.json'
-import Aos from 'aos'
+
+import './card.css'
 import 'aos/dist/aos.css'
 
-
+import Data2 from '../../../../places.json'
 
 
 const Main = () => {

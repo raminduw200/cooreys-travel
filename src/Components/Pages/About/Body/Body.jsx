@@ -109,7 +109,7 @@ const Home = () => {
                             </div>
                             <p>Instagram</p>
                         </a>
-                        <a className="whatsapp" data-aos="fade-up" href=''>
+                        <a className="whatsapp" data-aos="fade-up" href='https://wa.me/94740255541'>
                             <div className="icon">
                                 <IoLogoWhatsapp />
                             </div>
