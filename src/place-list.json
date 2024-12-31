@@ -1,7 +1,7 @@
  [
   {
     "id": 1,
-    "imgSrc": "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+    "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Galle_Fort.jpg/1200px-Galle_Fort.jpg",
     "location": "Galle",
     "district": "Southern Province",
     "shortDesc": "Galle is a city on the southwest coast of Sri Lanka. It’s known for Galle Fort, the fortified old city founded by Portuguese colonists in the 16th century. Stone sea walls, expanded by the Dutch, encircle car-free streets with architecture reflecting Portuguese, Dutch and British rule. Notable buildings include the 18th-century Dutch Reformed Church. Galle Lighthouse stands on the fort’s southeast tip.",
@@ -9,7 +9,7 @@
       {
         "id": 1,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://wheretoflow.com/wp-content/uploads/2023/02/jungle-beach-unawatuna-00-1024x768.webp",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -20,7 +20,7 @@
       {
         "id": 2,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://ceylontoday.lk/wp-content/uploads/2023/11/11-19.jpg",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -31,7 +31,7 @@
       {
         "id": 3,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/f/fc/Dondra_Head_Lighthouse_-_ATennakoon.jpg",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -43,7 +43,7 @@
   },
   {
     "id": 2,
-    "imgSrc": "https://media.istockphoto.com/id/1285881901/photo/temple-of-the-sacred-tooth-relic-at-kandy-sri-lanka.jpg?s=612x612&w=0&k=20&c=gqnoXgatwo1Ar_oCYnGnmE3Ts7sn9DvYKPK0n6Mhca8=",
+    "imgSrc": "https://static.saltinourhair.com/wp-content/uploads/2016/11/23155637/Things-to-do-Ella-Sri-Lanka-Nine-arch-bridge-view-2.jpg",
     "location": "Kandy",
     "district": "Central Province",
     "shortDesc": "Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest. The city's heart is scenic Kandy Lake (Bogambara Lake), which is popular for strolling. Kandy is famed for sacred Buddhist sites, including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession.",
@@ -51,7 +51,7 @@
       {
         "id": 1,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://sridaladamaligawa.lk/wp-content/uploads/2020/09/Octagan-Thumbnail-2-768x432.jpg",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -62,7 +62,7 @@
       {
         "id": 2,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/9/98/Botanical_Garden_of_Peradeniya_03.jpg",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -73,7 +73,7 @@
       {
         "id": 3,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/60/ff/c5/ambuluwawa-tower-is-the.jpg?w=1200&h=-1&s=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -85,7 +85,7 @@
   },
   {
     "id": 3,
-    "imgSrc": "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+    "imgSrc": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/85/1c/01/horton-plains-national.jpg?w=1200&h=1200&s=1",
     "location": "Nuwara Eliya",
     "district": "Central Province",
     "shortDesc": "Galle is a city on the southwest coast of Sri Lanka. It’s known for Galle Fort, the fortified old city founded by Portuguese colonists in the 16th century. Stone sea walls, expanded by the Dutch, encircle car-free streets with architecture reflecting Portuguese, Dutch and British rule. Notable buildings include the 18th-century Dutch Reformed Church. Galle Lighthouse stands on the fort’s southeast tip.",
@@ -93,7 +93,7 @@
       {
         "id": 1,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/85/1c/01/horton-plains-national.jpg?w=1200&h=1200&s=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -104,7 +104,7 @@
       {
         "id": 2,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/23/33/ab/gregory-lake-nuwara-eliya.jpg?w=1200&h=1200&s=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -115,7 +115,7 @@
       {
         "id": 3,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/06/1a/06/caption.jpg?w=300&h=300&s=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -126,7 +126,7 @@
       {
         "id": 4,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/5d/6f/d9/victoria-park.jpg?w=900&h=500&s=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -138,7 +138,7 @@
   },
   {
     "id": 4,
-    "imgSrc": "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+    "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNU2cmVwl9c2cLZspHRYZhftcMgdeatQC64w&s",
     "location": "Ella",
     "district": "Uva Province",
     "shortDesc": "Nestled in the lush green hills of Sri Lanka's hill country, Ella is a quaint and picturesque town that beckons travelers with its natural beauty. Surrounded by tea plantations and misty mountains, it offers breathtaking views and a serene atmosphere",
@@ -146,7 +146,7 @@
       {
         "id": 1,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://www.trawell.in/admin/images/upload/52773560Ravana_Falls.jpg",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -157,7 +157,7 @@
       {
         "id": 2,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://cf.bstatic.com/xdata/images/hotel/max1024x768/487814640.jpg?k=9ceb99f1d29e38903dfc320ebb0adc0155e36f198b602cb5ac7125c4c63d5754&o=&hp=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -168,7 +168,7 @@
       {
         "id": 3,
         "imgSrc": [
-          "https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg",
+          "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/5e/94/c3/sunrise.jpg?w=900&h=500&s=1",
           "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
           "https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80",
           "https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"

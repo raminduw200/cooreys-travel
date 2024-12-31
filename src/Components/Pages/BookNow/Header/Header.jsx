@@ -22,7 +22,7 @@ const Home = () => {
         <section className='packageDetailHeader'>
             <div className="overlay"></div>
             {/* <video src={video} muted autoPlay loop type="video/mp4"></video> */}
-            <img src="https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg" alt='booknow' />
+            <img src="https://www.lovidhu.com/uploads/posts/2021/05//nine-arch-bridge-demodara-sri-lanka-945x630.jpg" alt='booknow' />
             <div className="headerContent container">
                 <div className="textDiv">
 

@@ -47,8 +47,7 @@ const Footer = () => {
                         </div>
 
                         <div data-aos="fade-up" className="footerParagraph">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci totam beatae quos alias fuga vitae sequi. Ratione, voluptatem omnis iusto hic molestiae esse perferendis delectus quaerat debitis dolor! Harum, sequi!
-                        </div>
+                        Cooreys Travel: Your trusted partner in creating unforgettable journeys across the breathtaking landscapes of Sri Lanka and beyond. Let us make your travel dreams a reality.                        </div>
 
                         <div data-aos="fade-up" className="footerSocials flex">
                             <AiOutlineTwitter className="icon" />

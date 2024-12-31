@@ -341,7 +341,7 @@ const Home = () => {
     return (
         <section className='packageDetailHeader'>
             <div className="overlay"></div>
-            <img src="https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg" alt='About Us' />
+            <img src="https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-6/272985528_3291804884381449_6596424884944013515_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=4YTkPRZPtYQQ7kNvgFJTh6y&_nc_oc=AdhnUviRs-R88EOFThK7VdmTgN3ZWdT3M2pf3GqjUpUdO6M3Y70IG4nuiEtZWzEVIaY&_nc_zt=23&_nc_ht=scontent.fcmb2-2.fna&_nc_gid=Aa6lGlVZ5k9tjmt5hWMGpfB&oh=00_AYBypTSH9-dkblio8TgDUXg_7zgmr2aODyM7lwZFs_Tdig&oe=6779DFDA" alt='About Us' />
             <div className="headerContent container">
                 <div className="textDiv">
 

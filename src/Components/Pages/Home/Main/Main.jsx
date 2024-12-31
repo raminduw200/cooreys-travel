@@ -10,7 +10,7 @@ import 'aos/dist/aos.css'
 const Data2 = [
     {
         id: 1,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        imgSrc: 'https://ichef.bbci.co.uk/images/ic/1376xn/p0b7n6dm.jpg.webp',
         packageName: 'Light Traveler',
         location: 'Sri Lanka',
         days: "6 Days",
@@ -19,7 +19,7 @@ const Data2 = [
     },
     {
         id: 2,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        imgSrc: 'https://content.r9cdn.net/rimg/dimg/16/71/1bacba85-city-46478-169110968e4.jpg?crop=true&width=1020&height=498',
         packageName: 'Explorer',
         location: 'Sri Lanka',
         days: "10 Days",

@@ -15,7 +15,7 @@ import 'aos/dist/aos.css'
 const Data = [
     {
         id: 1,
-        imgSrc: 'https://srilankatravelgram.com/wp-content/uploads/2019/09/Nuwara-Eliya.jpg',
+        imgSrc: 'https://static.saltinourhair.com/wp-content/uploads/2016/11/23155637/Things-to-do-Ella-Sri-Lanka-Nine-arch-bridge-view-2.jpg',
         packageName: 'Light Traveler',
         location: 'Sri Lanka',
         days: "6 Days",

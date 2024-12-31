@@ -16,16 +16,16 @@ const Data = [
         country: "America",
         rate: 4,
         date: "24/01/2023",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        description: 'Great stay friendly staff.'
     },
     {
         id: 2,
         dp: 'https://cdn.theathletic.com/app/uploads/2020/04/13223022/HS_Square_0036_20200227Person-Joseph0616_bw.jpg',
         name: "Sara Eren",
         country: "Brazil",
-        rate: 2,
+        rate: 5,
         date: "12/12/2020",
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        description: 'Very food and friendly service. Food is more spicy'
     },
 ]
 
